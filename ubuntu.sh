@@ -1,5 +1,6 @@
-BootStrap: docker
-From: ubuntu:latest
+BootStrap: debootstrap
+OSVersion: trusty
+MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 %environment
 #    PERL5LIB=/app/fizkin/scripts
