@@ -2,8 +2,8 @@ BootStrap: docker
 From: ubuntu:latest
 
 %environment
-    PERL5LIB=/app/fizkin/scripts
-    export PERL5LIB
+#    PERL5LIB=/app/fizkin/scripts
+#    export PERL5LIB
     PATH=/app/centrifuge:$PATH
     LD_LIBRARY_PATH=/app
     export LD_LIBRARY_PATH
@@ -22,6 +22,11 @@ From: ubuntu:latest
     export APP_DIR=/app
     mkdir -p $APP_DIR
     cd $APP_DIR
+
+    # Mount points for HPC/PBS directories
+    mkdir /work
+    mkdir /extra
+    mkdir /xdisk
 
     wget -O centrifuge.zip ftp://ftp.ccb.jhu.edu/pub/infphilo/centrifuge/downloads/centrifuge-1.0.3-beta-Linux_x86_64.zip
     unzip centrifuge.zip

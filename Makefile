@@ -1,6 +1,8 @@
-SINGULARITY = /usr/local/bin/singularity
+#SINGULARITY = /usr/local/bin/singularity
+
+SINGULARITY = /usr/bin/singularity
 IMG_NAME = centrifuge.img
-DEF_NAME = image.def
+DEF_NAME = ubuntu.sh
 SIZE = 512
 
 run:
