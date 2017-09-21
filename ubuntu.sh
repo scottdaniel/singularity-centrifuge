@@ -28,6 +28,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     mkdir /work
     mkdir /extra
     mkdir /xdisk
+    mkdir /centdb
 
     wget -O centrifuge.zip ftp://ftp.ccb.jhu.edu/pub/infphilo/centrifuge/downloads/centrifuge-1.0.3-beta-Linux_x86_64.zip
     unzip centrifuge.zip
