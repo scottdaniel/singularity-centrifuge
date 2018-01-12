@@ -11,7 +11,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 %post
     apt-get update
-    apt-get install -y locales git build-essential wget curl zip libcurl4-openssl-dev libssl-dev
+    apt-get install -y locales git build-essential wget curl zip libcurl4-openssl-dev libssl-dev python
     locale-gen en_US.UTF-8
 
     #
