@@ -22,10 +22,11 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     cd $APP_DIR
 
     # Mount points for HPC/PBS directories
-    mkdir /work
-    mkdir /extra
-    mkdir /xdisk
-    mkdir /centdb
+    mkdir -p /work
+    mkdir -p /extra
+    mkdir -p /xdisk
+    mkdir -p /centdb
+    mkdir -p /rsgrps
 
 	cd /extra
 	git clone https://github.com/infphilo/centrifuge
